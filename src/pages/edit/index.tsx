@@ -25,7 +25,7 @@ export default function Edit() {
     }, []);
 
     function onAddVylet() {
-        axios.post(`/api/vylety`, currentVylet).then((res) => {
+        axios.post(`/api/vylety`, currentVylet).then(() => {
             router.push('/');
         })
     }
